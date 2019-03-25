@@ -1,2 +1,3 @@
 swagger2.json
-sdk/
+node_modules
+javascript-sdk/
