@@ -1,6 +1,13 @@
-# shutterstock-api.Allotment
+---
+title: shutterstock-api.Allotment
+permalink: docs/Allotment
+toc: false
+---
+
+
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **downloads_left** | **Number** | Number of licenses remaining in the subscription | [optional] 

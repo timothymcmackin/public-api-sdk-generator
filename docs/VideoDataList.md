@@ -1,10 +1,17 @@
-# shutterstock-api.VideoDataList
+---
+title: shutterstock-api.VideoDataList
+permalink: docs/VideoDataList
+toc: false
+---
+
+
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | [**[Video]**](Video.md) | Videos | [optional] 
-**errors** | [**[Error]**](Error.md) | Error list; appears only if there was an error | [optional] 
+**data** | [**[Video]**](Video) | Videos | [optional] 
+**errors** | [**[Error]**](Error) | Error list; appears only if there was an error | [optional] 
 **message** | **String** | Server-generated message, if any | [optional] 
 **page** | **Number** | Current page that is returned | [optional] 
 **per_page** | **Number** | Number of results per page | [optional] 

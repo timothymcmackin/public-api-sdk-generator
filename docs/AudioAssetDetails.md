@@ -1,6 +1,13 @@
-# shutterstock-api.AudioAssetDetails
+---
+title: shutterstock-api.AudioAssetDetails
+permalink: docs/AudioAssetDetails
+toc: false
+---
+
+
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **file_size** | **Number** | File size of the track | [optional] 

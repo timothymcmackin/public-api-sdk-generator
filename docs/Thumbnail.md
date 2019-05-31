@@ -1,6 +1,13 @@
-# shutterstock-api.Thumbnail
+---
+title: shutterstock-api.Thumbnail
+permalink: docs/Thumbnail
+toc: false
+---
+
+
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **height** | **Number** | Height in pixels of the image thumbnail | 

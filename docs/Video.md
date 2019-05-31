@@ -1,15 +1,22 @@
-# shutterstock-api.Video
+---
+title: shutterstock-api.Video
+permalink: docs/Video
+toc: false
+---
+
+
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **added_date** | **Date** | Date this video was added to the Shutterstock library, in the format YYYY-MM-DD | [optional] 
 **affiliate_url** | **String** | Affiliate referral link; appears only for registered affiliate partners | [optional] 
 **aspect** | **Number** | Aspect ratio of this video in decimal format | [optional] 
 **aspect_ratio** | **String** | Aspect ratio of the video | [optional] 
-**assets** | [**VideoAssets**](VideoAssets.md) |  | [optional] 
-**categories** | [**[Category]**](Category.md) | List of categories | [optional] 
-**contributor** | [**Contributor**](Contributor.md) |  | 
+**assets** | [**VideoAssets**](VideoAssets) |  | [optional] 
+**categories** | [**[Category]**](Category) | List of categories | [optional] 
+**contributor** | [**Contributor**](Contributor) |  | 
 **description** | **String** | Description of this video | [optional] 
 **duration** | **Number** | Duration of this video, in seconds | [optional] 
 **has_model_release** | **Boolean** | Whether or not this video has been released for use by the model appearing in it | [optional] 
@@ -19,7 +26,7 @@ Name | Type | Description | Notes
 **is_editorial** | **Boolean** | Whether or not this video is editorial content | [optional] 
 **keywords** | **[String]** | Keywords associated with the content of this video | [optional] 
 **media_type** | **String** | Media type of this video, should always be \&quot;video\&quot; | 
-**models** | [**[Model]**](Model.md) | List of models in this video | [optional] 
+**models** | [**[Model]**](Model) | List of models in this video | [optional] 
 **url** | **String** | Link to video information page; included only for certain accounts | [optional] 
 
 

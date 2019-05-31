@@ -1,6 +1,13 @@
-# shutterstock-api.AccessTokenDetails
+---
+title: shutterstock-api.AccessTokenDetails
+permalink: docs/AccessTokenDetails
+toc: false
+---
+
+
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **client_id** | **String** | Client ID that is associated with the user | [optional] 
@@ -14,8 +21,7 @@ Name | Type | Description | Notes
 **username** | **String** | User name that is associated with the user | [optional] 
 
 
-<a name="RealmEnum"></a>
-## Enum: RealmEnum
+## Enum: RealmEnum {#RealmEnum}
 
 
 * `customer` (value: `"customer"`)

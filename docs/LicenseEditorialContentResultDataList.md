@@ -1,10 +1,17 @@
-# shutterstock-api.LicenseEditorialContentResultDataList
+---
+title: shutterstock-api.LicenseEditorialContentResultDataList
+permalink: docs/LicenseEditorialContentResultDataList
+toc: false
+---
+
+
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | [**[LicenseEditorialContentResult]**](LicenseEditorialContentResult.md) | License results | [optional] 
-**errors** | [**[Error]**](Error.md) | Error list; appears only if there was an error | [optional] 
+**data** | [**[LicenseEditorialContentResult]**](LicenseEditorialContentResult) | License results | [optional] 
+**errors** | [**[Error]**](Error) | Error list; appears only if there was an error | [optional] 
 **message** | **String** | Optional error message | [optional] 
 **page** | **Number** | Current page of the response | [optional] 
 **per_page** | **Number** | Number of results per page | [optional] 

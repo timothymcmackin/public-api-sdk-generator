@@ -1,6 +1,13 @@
-# shutterstock-api.LicenseRequestMetadata
+---
+title: shutterstock-api.LicenseRequestMetadata
+permalink: docs/LicenseRequestMetadata
+toc: false
+---
+
+
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **customer_id** | **String** | The ID of a revenue-sharing partner&#39;s customer | [optional] 

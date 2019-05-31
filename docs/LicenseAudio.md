@@ -1,6 +1,13 @@
-# shutterstock-api.LicenseAudio
+---
+title: shutterstock-api.LicenseAudio
+permalink: docs/LicenseAudio
+toc: false
+---
+
+
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **audio_id** | **String** | ID of the track being licensed | 
@@ -8,8 +15,7 @@ Name | Type | Description | Notes
 **search_id** | **String** | ID of the search that led to this licensing event | [optional] 
 
 
-<a name="LicenseEnum"></a>
-## Enum: LicenseEnum
+## Enum: LicenseEnum {#LicenseEnum}
 
 
 * `standard` (value: `"audio_standard"`)

@@ -1,9 +1,16 @@
-# shutterstock-api.Collection
+---
+title: shutterstock-api.Collection
+permalink: docs/Collection
+toc: false
+---
+
+
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**cover_item** | [**CollectionItem**](CollectionItem.md) |  | [optional] 
+**cover_item** | [**CollectionItem**](CollectionItem) |  | [optional] 
 **created_time** | **Date** | When the collection was created | [optional] 
 **id** | **String** | The collection ID | 
 **items_updated_time** | **Date** | The last time this collection&#39;s items were updated | [optional] 

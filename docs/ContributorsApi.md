@@ -1,14 +1,17 @@
-# shutterstock-api.ContributorsApi
+---
+title: shutterstock-api.ContributorsApi
+permalink: docs/ContributorsApi
+---
 
 All URIs are relative to `https://api.shutterstock.com`.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[`getContributor`](ContributorsApi.md#getContributor) | `GET /v2/contributors/{contributor_id}` | Get details about a single contributor
-[`getContributorCollectionItems`](ContributorsApi.md#getContributorCollectionItems) | `GET /v2/contributors/{contributor_id}/collections/{id}/items` | Get the items in contributors&#39; collections
-[`getContributorCollections`](ContributorsApi.md#getContributorCollections) | `GET /v2/contributors/{contributor_id}/collections/{id}` | Get details about contributors&#39; collections
-[`getContributorCollectionsList`](ContributorsApi.md#getContributorCollectionsList) | `GET /v2/contributors/{contributor_id}/collections` | List contributors&#39; collections
-[`getContributorList`](ContributorsApi.md#getContributorList) | `GET /v2/contributors` | Get details about multiple contributors
+[`getContributor`](#getContributor) | `GET /v2/contributors/{contributor_id}` | Get details about a single contributor
+[`getContributorCollectionItems`](#getContributorCollectionItems) | `GET /v2/contributors/{contributor_id}/collections/{id}/items` | Get the items in contributors&#39; collections
+[`getContributorCollections`](#getContributorCollections) | `GET /v2/contributors/{contributor_id}/collections/{id}` | Get details about contributors&#39; collections
+[`getContributorCollectionsList`](#getContributorCollectionsList) | `GET /v2/contributors/{contributor_id}/collections` | List contributors&#39; collections
+[`getContributorList`](#getContributorList) | `GET /v2/contributors` | Get details about multiple contributors
 
 
 <a name="getContributor"></a>
@@ -19,7 +22,7 @@ Method | HTTP request | Description
 
 This endpoint shows information about a single contributor, including contributor type, equipment they use, and other attributes.
 
-### Example
+### Example {#getContributor-example}
 
 ```javascript
 const sstk = require('shutterstock-api');
@@ -42,29 +45,29 @@ api.getContributor(contributor_id)
 
 ```
 
-### Parameters
+### Parameters {#getContributor-parameters}
 
 
 Name | Type | Description
 ------------- | ------------- | -------------
  contributor_id (required) | String| Contributor ID 
 
-### Accepted authentication
+### Accepted authentication {#getContributor-auth}
 
 
-- [OAuth](../README.md#OAuth_authentication) (No scope required.)
+- OAuth (No scope required.)
 
-### HTTP request headers
+### HTTP request headers {#getContributor-headers}
 
 
 
 - Accept: application/json
 
-### Return type
+### Return type {#getContributor-return}
 
-[ContributorProfile](ContributorProfile.md)
+[ContributorProfile](ContributorProfile)
 
-### Example response
+### Example response {#getContributor-response}
 
 {
   "website" : "website",
@@ -93,9 +96,9 @@ Name | Type | Description
 
 **Get the items in contributors&#39; collections**
 
-This endpoint lists the IDs of items in a contributor&#39;s collection and the date that each was added.
+This endpoint lists the IDs of items in a contributor's collection and the date that each was added.
 
-### Example
+### Example {#getContributorCollectionItems-example}
 
 ```javascript
 const sstk = require('shutterstock-api');
@@ -125,7 +128,7 @@ api.getContributorCollectionItems(contributor_id, id, queryParams)
 
 ```
 
-### Parameters
+### Parameters {#getContributorCollectionItems-parameters}
 
 
 Name | Type | Description
@@ -136,22 +139,22 @@ Name | Type | Description
  per_page | Number| Number of results per page, defaults to 20 
  sort | String| Sort order <br/><br/>Valid values: "newest", "oldest"
 
-### Accepted authentication
+### Accepted authentication {#getContributorCollectionItems-auth}
 
 
-- [OAuth](../README.md#OAuth_authentication) (No scope required.)
+- OAuth (No scope required.)
 
-### HTTP request headers
+### HTTP request headers {#getContributorCollectionItems-headers}
 
 
 
 - Accept: application/json
 
-### Return type
+### Return type {#getContributorCollectionItems-return}
 
-[CollectionItemDataList](CollectionItemDataList.md)
+[CollectionItemDataList](CollectionItemDataList)
 
-### Example response
+### Example response {#getContributorCollectionItems-response}
 
 {
   "data" : [ {
@@ -173,9 +176,9 @@ Name | Type | Description
 
 **Get details about contributors&#39; collections**
 
-This endpoint gets more detailed information about a contributor&#39;s collection, including its cover image, timestamps for its creation, and most recent update. To get the items in collections, use GET /contributors/{contributor_id}/collections/{id}/items.
+This endpoint gets more detailed information about a contributor's collection, including its cover image, timestamps for its creation, and most recent update. To get the items in collections, use GET /contributors/{contributor_id}/collections/{id}/items.
 
-### Example
+### Example {#getContributorCollections-example}
 
 ```javascript
 const sstk = require('shutterstock-api');
@@ -200,7 +203,7 @@ api.getContributorCollections(contributor_id, id)
 
 ```
 
-### Parameters
+### Parameters {#getContributorCollections-parameters}
 
 
 Name | Type | Description
@@ -208,22 +211,22 @@ Name | Type | Description
  contributor_id (required) | String| Contributor ID 
  id (required) | String| Collection ID that belongs to the contributor 
 
-### Accepted authentication
+### Accepted authentication {#getContributorCollections-auth}
 
 
-- [OAuth](../README.md#OAuth_authentication) (No scope required.)
+- OAuth (No scope required.)
 
-### HTTP request headers
+### HTTP request headers {#getContributorCollections-headers}
 
 
 
 - Accept: application/json
 
-### Return type
+### Return type {#getContributorCollections-return}
 
-[Collection](Collection.md)
+[Collection](Collection)
 
-### Example response
+### Example response {#getContributorCollections-response}
 
 {
   "created_time" : "2000-01-23T04:56:07.000+00:00",
@@ -249,7 +252,7 @@ Name | Type | Description
 
 This endpoint lists collections based on contributor ID.
 
-### Example
+### Example {#getContributorCollectionsList-example}
 
 ```javascript
 const sstk = require('shutterstock-api');
@@ -275,7 +278,7 @@ api.getContributorCollectionsList(contributor_id, queryParams)
 
 ```
 
-### Parameters
+### Parameters {#getContributorCollectionsList-parameters}
 
 
 Name | Type | Description
@@ -283,22 +286,22 @@ Name | Type | Description
  contributor_id (required) | String| Contributor ID 
  sort | String| Sort order <br/><br/>Valid values: "newest", "last_updated", "item_count"
 
-### Accepted authentication
+### Accepted authentication {#getContributorCollectionsList-auth}
 
 
-- [OAuth](../README.md#OAuth_authentication) (No scope required.)
+- OAuth (No scope required.)
 
-### HTTP request headers
+### HTTP request headers {#getContributorCollectionsList-headers}
 
 
 
 - Accept: application/json
 
-### Return type
+### Return type {#getContributorCollectionsList-return}
 
-[CollectionDataList](CollectionDataList.md)
+[CollectionDataList](CollectionDataList)
 
-### Example response
+### Example response {#getContributorCollectionsList-response}
 
 {
   "data" : [ {
@@ -342,7 +345,7 @@ Name | Type | Description
 
 This endpoint lists information about one or more contributors, including contributor type, equipment they use and other attributes.
 
-### Example
+### Example {#getContributorList-example}
 
 ```javascript
 const sstk = require('shutterstock-api');
@@ -365,29 +368,29 @@ api.getContributorList(id)
 
 ```
 
-### Parameters
+### Parameters {#getContributorList-parameters}
 
 
 Name | Type | Description
 ------------- | ------------- | -------------
- id (required) | [[String]](String.md)| One or more contributor IDs 
+ id (required) | [[String]](String)| One or more contributor IDs 
 
-### Accepted authentication
+### Accepted authentication {#getContributorList-auth}
 
 
-- [OAuth](../README.md#OAuth_authentication) (No scope required.)
+- OAuth (No scope required.)
 
-### HTTP request headers
+### HTTP request headers {#getContributorList-headers}
 
 
 
 - Accept: application/json
 
-### Return type
+### Return type {#getContributorList-return}
 
-[ContributorProfileDataList](ContributorProfileDataList.md)
+[ContributorProfileDataList](ContributorProfileDataList)
 
-### Example response
+### Example response {#getContributorList-response}
 
 {
   "per_page" : 6,

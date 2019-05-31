@@ -1,10 +1,17 @@
-# shutterstock-api.EditorialContentDataList
+---
+title: shutterstock-api.EditorialContentDataList
+permalink: docs/EditorialContentDataList
+toc: false
+---
+
+
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | [**[EditorialContent]**](EditorialContent.md) | Editorial items | [optional] 
-**errors** | [**[Error]**](Error.md) | Error list; appears only if there was an error | [optional] 
+**data** | [**[EditorialContent]**](EditorialContent) | Editorial items | [optional] 
+**errors** | [**[Error]**](Error) | Error list; appears only if there was an error | [optional] 
 **message** | **String** | Optional error message | [optional] 
 **page** | **Number** | Current page of the response | [optional] 
 **per_page** | **Number** | Number of results per page | [optional] 

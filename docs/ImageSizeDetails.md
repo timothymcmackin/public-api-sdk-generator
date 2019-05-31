@@ -1,6 +1,13 @@
-# shutterstock-api.ImageSizeDetails
+---
+title: shutterstock-api.ImageSizeDetails
+permalink: docs/ImageSizeDetails
+toc: false
+---
+
+
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **display_name** | **String** | Display name of this image size | [optional] 

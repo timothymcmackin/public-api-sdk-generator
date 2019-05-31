@@ -1,13 +1,16 @@
-# shutterstock-api.UsersApi
+---
+title: shutterstock-api.UsersApi
+permalink: docs/UsersApi
+---
 
 All URIs are relative to `https://api.shutterstock.com`.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[`createUser`](UsersApi.md#createUser) | `POST /v2/user` | Register user
-[`getAccessToken`](UsersApi.md#getAccessToken) | `GET /v2/user/access_token` | Get access token details
-[`getUser`](UsersApi.md#getUser) | `GET /v2/user` | Get user details
-[`getUserSubsciptionList`](UsersApi.md#getUserSubsciptionList) | `GET /v2/user/subscriptions` | List user subscriptions
+[`createUser`](#createUser) | `POST /v2/user` | Register user
+[`getAccessToken`](#getAccessToken) | `GET /v2/user/access_token` | Get access token details
+[`getUser`](#getUser) | `GET /v2/user` | Get user details
+[`getUserSubsciptionList`](#getUserSubsciptionList) | `GET /v2/user/subscriptions` | List user subscriptions
 
 
 <a name="createUser"></a>
@@ -16,7 +19,7 @@ Method | HTTP request | Description
 
 **Register user**
 
-### Example
+### Example {#createUser-example}
 
 ```javascript
 const sstk = require('shutterstock-api');
@@ -39,29 +42,29 @@ api.createUser(body)
 
 ```
 
-### Parameters
+### Parameters {#createUser-parameters}
 
 
 Name | Type | Description
 ------------- | ------------- | -------------
- body (required) | [UserPostRequest](UserPostRequest.md)| User details 
+ body (required) | [UserPostRequest](UserPostRequest)| User details 
 
-### Accepted authentication
+### Accepted authentication {#createUser-auth}
 
 
-- [OAuth](../README.md#OAuth_authentication) (No scope required.)
+- OAuth (No scope required.)
 
-### HTTP request headers
+### HTTP request headers {#createUser-headers}
 
 
 - Content-Type: application/json
 - Accept: application/json
 
-### Return type
+### Return type {#createUser-return}
 
-[UserPostResponse](UserPostResponse.md)
+[UserPostResponse](UserPostResponse)
 
-### Example response
+### Example response {#createUser-response}
 
 {
   "id" : "id"
@@ -73,7 +76,7 @@ Name | Type | Description
 
 **Get access token details**
 
-### Example
+### Example {#getAccessToken-example}
 
 ```javascript
 const sstk = require('shutterstock-api');
@@ -92,26 +95,26 @@ api.getAccessToken()
 
 ```
 
-### Parameters
+### Parameters {#getAccessToken-parameters}
 
 This endpoint does not accept any parameters.
 
-### Accepted authentication
+### Accepted authentication {#getAccessToken-auth}
 
 
-- [OAuth](../README.md#OAuth_authentication) (No scope required.)
+- OAuth (No scope required.)
 
-### HTTP request headers
+### HTTP request headers {#getAccessToken-headers}
 
 
 
 - Accept: application/json
 
-### Return type
+### Return type {#getAccessToken-return}
 
-[AccessTokenDetails](AccessTokenDetails.md)
+[AccessTokenDetails](AccessTokenDetails)
 
-### Example response
+### Example response {#getAccessToken-response}
 
 {
   "user_id" : "user_id",
@@ -131,7 +134,7 @@ This endpoint does not accept any parameters.
 
 **Get user details**
 
-### Example
+### Example {#getUser-example}
 
 ```javascript
 const sstk = require('shutterstock-api');
@@ -150,28 +153,28 @@ api.getUser()
 
 ```
 
-### Parameters
+### Parameters {#getUser-parameters}
 
 This endpoint does not accept any parameters.
 
-### Accepted authentication
+### Accepted authentication {#getUser-auth}
 
 
-- [OAuth](../README.md#OAuth_authentication) Required scopes:
+- OAuth Required scopes:
   - user.view
 
 
-### HTTP request headers
+### HTTP request headers {#getUser-headers}
 
 
 
 - Accept: application/json
 
-### Return type
+### Return type {#getUser-return}
 
-[UserDetails](UserDetails.md)
+[UserDetails](UserDetails)
 
-### Example response
+### Example response {#getUser-response}
 
 {
   "only_enhanced_license" : true,
@@ -197,7 +200,7 @@ This endpoint does not accept any parameters.
 
 **List user subscriptions**
 
-### Example
+### Example {#getUserSubsciptionList-example}
 
 ```javascript
 const sstk = require('shutterstock-api');
@@ -216,28 +219,28 @@ api.getUserSubsciptionList()
 
 ```
 
-### Parameters
+### Parameters {#getUserSubsciptionList-parameters}
 
 This endpoint does not accept any parameters.
 
-### Accepted authentication
+### Accepted authentication {#getUserSubsciptionList-auth}
 
 
-- [OAuth](../README.md#OAuth_authentication) Required scopes:
+- OAuth Required scopes:
   - purchases.view
 
 
-### HTTP request headers
+### HTTP request headers {#getUserSubsciptionList-headers}
 
 
 
 - Accept: application/json
 
-### Return type
+### Return type {#getUserSubsciptionList-return}
 
-[SubscriptionDataList](SubscriptionDataList.md)
+[SubscriptionDataList](SubscriptionDataList)
 
-### Example response
+### Example response {#getUserSubsciptionList-response}
 
 {
   "per_page" : 5,

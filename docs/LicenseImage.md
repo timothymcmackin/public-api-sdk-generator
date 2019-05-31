@@ -1,13 +1,20 @@
-# shutterstock-api.LicenseImage
+---
+title: shutterstock-api.LicenseImage
+permalink: docs/LicenseImage
+toc: false
+---
+
+
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**auth_cookie** | [**Cookie**](Cookie.md) | Cookie object | [optional] 
+**auth_cookie** | [**Cookie**](Cookie) | Cookie object | [optional] 
 **editorial_acknowledgement** | **Boolean** | Set to true to acknowledge the editorial agreement | [optional] 
 **format** | **String** | Image format to download | [optional] 
 **image_id** | **String** | Image ID | 
-**metadata** | [**LicenseRequestMetadata**](LicenseRequestMetadata.md) |  | [optional] 
+**metadata** | [**LicenseRequestMetadata**](LicenseRequestMetadata) |  | [optional] 
 **price** | **Number** | For revenue-sharing transactions, the final cost to the end customer | [optional] 
 **search_id** | **String** | ID of the search that led to this licensing transaction | [optional] 
 **show_modal** | **Boolean** | (Deprecated) | [optional] 
@@ -16,8 +23,7 @@ Name | Type | Description | Notes
 **verification_code** | **String** | (Deprecated) | [optional] 
 
 
-<a name="FormatEnum"></a>
-## Enum: FormatEnum
+## Enum: FormatEnum {#FormatEnum}
 
 
 * `jpg` (value: `"jpg"`)
@@ -27,8 +33,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="SizeEnum"></a>
-## Enum: SizeEnum
+## Enum: SizeEnum {#SizeEnum}
 
 
 * `small` (value: `"small"`)

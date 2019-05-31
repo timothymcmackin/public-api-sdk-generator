@@ -1,10 +1,17 @@
-# shutterstock-api.CollectionDataList
+---
+title: shutterstock-api.CollectionDataList
+permalink: docs/CollectionDataList
+toc: false
+---
+
+
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | [**[Collection]**](Collection.md) | Collections | [optional] 
-**errors** | [**[Error]**](Error.md) | Error list; appears only if there was an error | [optional] 
+**data** | [**[Collection]**](Collection) | Collections | [optional] 
+**errors** | [**[Error]**](Error) | Error list; appears only if there was an error | [optional] 
 **message** | **String** | Server-generated message, if any | [optional] 
 **page** | **Number** | The current page of results | [optional] 
 **per_page** | **Number** | The number of results per page | [optional] 

@@ -1,6 +1,13 @@
-# shutterstock-api.ContributorProfileSocialMedia
+---
+title: shutterstock-api.ContributorProfileSocialMedia
+permalink: docs/ContributorProfileSocialMedia
+toc: false
+---
+
+
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **facebook** | **String** | Facebook link for contributor | [optional] 

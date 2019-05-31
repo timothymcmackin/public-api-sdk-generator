@@ -1,8 +1,15 @@
-# shutterstock-api.LicenseImageRequest
+---
+title: shutterstock-api.LicenseImageRequest
+permalink: docs/LicenseImageRequest
+toc: false
+---
+
+
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**images** | [**[LicenseImage]**](LicenseImage.md) | Images to create licenses for | 
+**images** | [**[LicenseImage]**](LicenseImage) | Images to create licenses for | 
 
 

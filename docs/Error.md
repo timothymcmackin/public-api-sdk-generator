@@ -1,6 +1,13 @@
-# shutterstock-api.Error
+---
+title: shutterstock-api.Error
+permalink: docs/Error
+toc: false
+---
+
+
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **code** | **String** | The error code of this error | [optional] 

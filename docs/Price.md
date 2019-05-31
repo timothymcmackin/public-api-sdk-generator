@@ -1,6 +1,13 @@
-# shutterstock-api.Price
+---
+title: shutterstock-api.Price
+permalink: docs/Price
+toc: false
+---
+
+
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **local_amount** | **Number** | Dollar amount of the calculated rev-share price in the currency local_currency | [optional] 

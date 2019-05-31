@@ -1,6 +1,13 @@
-# shutterstock-api.CollectionItem
+---
+title: shutterstock-api.CollectionItem
+permalink: docs/CollectionItem
+toc: false
+---
+
+
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **added_time** | **Date** | The date the item was added to the collection | [optional] 

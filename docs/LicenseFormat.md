@@ -1,6 +1,13 @@
-# shutterstock-api.LicenseFormat
+---
+title: shutterstock-api.LicenseFormat
+permalink: docs/LicenseFormat
+toc: false
+---
+
+
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **description** | **String** | Description of the license | [optional] 
@@ -10,8 +17,7 @@ Name | Type | Description | Notes
 **size** | **String** | Keyword that details the size of the media, such as hd or sd for video, huge or vector for images | [optional] 
 
 
-<a name="MediaTypeEnum"></a>
-## Enum: MediaTypeEnum
+## Enum: MediaTypeEnum {#MediaTypeEnum}
 
 
 * `image` (value: `"image"`)

@@ -1,15 +1,22 @@
-# shutterstock-api.Audio
+---
+title: shutterstock-api.Audio
+permalink: docs/Audio
+toc: false
+---
+
+
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **added_date** | **Date** | Date this track was added to the Shutterstock library, in the format: YYYY-MM-DD | [optional] 
 **affiliate_url** | **String** | Affiliate referral link; appears only for registered affiliate partners | [optional] 
-**album** | [**Album**](Album.md) |  | [optional] 
-**artists** | [**[Artist]**](Artist.md) | List of artists | [optional] 
-**assets** | [**AudioAssets**](AudioAssets.md) |  | [optional] 
+**album** | [**Album**](Album) |  | [optional] 
+**artists** | [**[Artist]**](Artist) | List of artists | [optional] 
+**assets** | [**AudioAssets**](AudioAssets) |  | [optional] 
 **bpm** | **Number** | BPM (beats per minute) of this track | [optional] 
-**contributor** | [**Contributor**](Contributor.md) |  | 
+**contributor** | [**Contributor**](Contributor) |  | 
 **deleted_time** | **Date** |  | [optional] 
 **description** | **String** | Description of this track | [optional] 
 **duration** | **Number** | Duration of this track in seconds | [optional] 
@@ -23,12 +30,12 @@ Name | Type | Description | Notes
 **language** | **String** | Language of this track&#39;s lyrics | [optional] 
 **lyrics** | **String** | Lyrics of this track | [optional] 
 **media_type** | **String** | Media type of this track; should always be \&quot;audio\&quot; | 
-**model_releases** | [**[ModelRelease]**](ModelRelease.md) | List of all model releases for this track | [optional] 
+**model_releases** | [**[ModelRelease]**](ModelRelease) | List of all model releases for this track | [optional] 
 **moods** | **[String]** | List of all moods of this track | [optional] 
 **published_time** | **Date** | Time this track was published, in the format YYYY-MM-DDThh:mm:ssZ | [optional] 
 **recording_version** | **String** | Recording version of this track | [optional] 
 **releases** | **[String]** | List of all releases of this track | [optional] 
-**similar_artists** | [**[Artist]**](Artist.md) | List of all similar artists of this track | [optional] 
+**similar_artists** | [**[Artist]**](Artist) | List of all similar artists of this track | [optional] 
 **submitted_time** | **Date** | Time this track was submitted, in the format YYYY-MM-DDThh:mm:ssZ | [optional] 
 **title** | **String** | Title of this track | [optional] 
 **updated_time** | **Date** | Time this track was last updated, in the format YYYY-MM-DDThh:mm:ssZ | [optional] 

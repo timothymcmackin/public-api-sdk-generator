@@ -1,6 +1,13 @@
-# shutterstock-api.UserDetails
+---
+title: shutterstock-api.UserDetails
+permalink: docs/UserDetails
+toc: false
+---
+
+
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **contributor_id** | **String** | Unique internal identifier of the user, as a contributor | [optional] 

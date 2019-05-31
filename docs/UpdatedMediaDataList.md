@@ -1,10 +1,17 @@
-# shutterstock-api.UpdatedMediaDataList
+---
+title: shutterstock-api.UpdatedMediaDataList
+permalink: docs/UpdatedMediaDataList
+toc: false
+---
+
+
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | [**[UpdatedMedia]**](UpdatedMedia.md) | Updated media items | [optional] 
-**errors** | [**[Error]**](Error.md) | Error list; appears only if there was an error | [optional] 
+**data** | [**[UpdatedMedia]**](UpdatedMedia) | Updated media items | [optional] 
+**errors** | [**[Error]**](Error) | Error list; appears only if there was an error | [optional] 
 **message** | **String** | Server-generated message, if any | [optional] 
 **page** | **Number** | Current page that is returned | [optional] 
 **per_page** | **Number** | Number of results per page | [optional] 

@@ -1,6 +1,13 @@
-# shutterstock-api.UserPostRequest
+---
+title: shutterstock-api.UserPostRequest
+permalink: docs/UserPostRequest
+toc: false
+---
+
+
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **email** | **String** | Email address for the new user | 

@@ -1,25 +1,28 @@
-# shutterstock-api.VideosApi
+---
+title: shutterstock-api.VideosApi
+permalink: docs/VideosApi
+---
 
 All URIs are relative to `https://api.shutterstock.com`.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[`addClipboxItems`](VideosApi.md#addClipboxItems) | `POST /v2/videos/collections/{id}/items` | Add videos to collections
-[`createClipbox`](VideosApi.md#createClipbox) | `POST /v2/videos/collections` | Create video collections
-[`deleteClipbox`](VideosApi.md#deleteClipbox) | `DELETE /v2/videos/collections/{id}` | Delete video collections
-[`deleteClipboxItems`](VideosApi.md#deleteClipboxItems) | `DELETE /v2/videos/collections/{id}/items` | Remove videos from collections
-[`downloadVideos`](VideosApi.md#downloadVideos) | `POST /v2/videos/licenses/{id}/downloads` | Download videos
-[`getClipbox`](VideosApi.md#getClipbox) | `GET /v2/videos/collections/{id}` | Get the details of video collections
-[`getClipboxItems`](VideosApi.md#getClipboxItems) | `GET /v2/videos/collections/{id}/items` | Get the contents of video collections
-[`getClipboxList`](VideosApi.md#getClipboxList) | `GET /v2/videos/collections` | List video collections
-[`getSimilarVideos`](VideosApi.md#getSimilarVideos) | `GET /v2/videos/{id}/similar` | List similar videos
-[`getVideo`](VideosApi.md#getVideo) | `GET /v2/videos/{id}` | Get details about videos
-[`getVideoCategories`](VideosApi.md#getVideoCategories) | `GET /v2/videos/categories` | List video categories
-[`getVideoLicenseList`](VideosApi.md#getVideoLicenseList) | `GET /v2/videos/licenses` | List video licenses
-[`getVideoList`](VideosApi.md#getVideoList) | `GET /v2/videos` | List videos
-[`licenseVideos`](VideosApi.md#licenseVideos) | `POST /v2/videos/licenses` | License videos
-[`renameClipbox`](VideosApi.md#renameClipbox) | `POST /v2/videos/collections/{id}` | Rename video collections
-[`searchVideos`](VideosApi.md#searchVideos) | `GET /v2/videos/search` | Search for videos
+[`addClipboxItems`](#addClipboxItems) | `POST /v2/videos/collections/{id}/items` | Add videos to collections
+[`createClipbox`](#createClipbox) | `POST /v2/videos/collections` | Create video collections
+[`deleteClipbox`](#deleteClipbox) | `DELETE /v2/videos/collections/{id}` | Delete video collections
+[`deleteClipboxItems`](#deleteClipboxItems) | `DELETE /v2/videos/collections/{id}/items` | Remove videos from collections
+[`downloadVideos`](#downloadVideos) | `POST /v2/videos/licenses/{id}/downloads` | Download videos
+[`getClipbox`](#getClipbox) | `GET /v2/videos/collections/{id}` | Get the details of video collections
+[`getClipboxItems`](#getClipboxItems) | `GET /v2/videos/collections/{id}/items` | Get the contents of video collections
+[`getClipboxList`](#getClipboxList) | `GET /v2/videos/collections` | List video collections
+[`getSimilarVideos`](#getSimilarVideos) | `GET /v2/videos/{id}/similar` | List similar videos
+[`getVideo`](#getVideo) | `GET /v2/videos/{id}` | Get details about videos
+[`getVideoCategories`](#getVideoCategories) | `GET /v2/videos/categories` | List video categories
+[`getVideoLicenseList`](#getVideoLicenseList) | `GET /v2/videos/licenses` | List video licenses
+[`getVideoList`](#getVideoList) | `GET /v2/videos` | List videos
+[`licenseVideos`](#licenseVideos) | `POST /v2/videos/licenses` | License videos
+[`renameClipbox`](#renameClipbox) | `POST /v2/videos/collections/{id}` | Rename video collections
+[`searchVideos`](#searchVideos) | `GET /v2/videos/search` | Search for videos
 
 
 <a name="addClipboxItems"></a>
@@ -30,7 +33,7 @@ Method | HTTP request | Description
 
 This endpoint adds one or more videos to a collection by video IDs.
 
-### Example
+### Example {#addClipboxItems-example}
 
 ```javascript
 const sstk = require("shutterstock-api");
@@ -59,28 +62,28 @@ videosApi.addLightboxItems(collectionId, body)
 ```
 
 
-### Parameters
+### Parameters {#addClipboxItems-parameters}
 
 
 Name | Type | Description
 ------------- | ------------- | -------------
  id (required) | String| The ID of the collection to which items should be added 
- body (required) | [CollectionItemRequest](CollectionItemRequest.md)| Array of video IDs to add to the collection 
+ body (required) | [CollectionItemRequest](CollectionItemRequest)| Array of video IDs to add to the collection 
 
-### Accepted authentication
+### Accepted authentication {#addClipboxItems-auth}
 
 
-- [OAuth](../README.md#OAuth_authentication) Required scopes:
+- OAuth Required scopes:
   - collections.edit
 
 
-### HTTP request headers
+### HTTP request headers {#addClipboxItems-headers}
 
 
 - Content-Type: application/json
 
 
-### Return type
+### Return type {#addClipboxItems-return}
 
 No response body.
 
@@ -91,9 +94,9 @@ No response body.
 
 **Create video collections**
 
-This endpoint creates one or more collections (clipboxes). To add videos to collections, use &#x60;POST /videos/collections/{id}/items&#x60;.
+This endpoint creates one or more collections (clipboxes). To add videos to collections, use `POST /videos/collections/{id}/items`.
 
-### Example
+### Example {#createClipbox-example}
 
 ```javascript
 const sstk = require("shutterstock-api");
@@ -114,31 +117,31 @@ videosApi.createClipbox(body)
 ```
 
 
-### Parameters
+### Parameters {#createClipbox-parameters}
 
 
 Name | Type | Description
 ------------- | ------------- | -------------
- body (required) | [CollectionCreateRequest](CollectionCreateRequest.md)| Collection metadata 
+ body (required) | [CollectionCreateRequest](CollectionCreateRequest)| Collection metadata 
 
-### Accepted authentication
+### Accepted authentication {#createClipbox-auth}
 
 
-- [OAuth](../README.md#OAuth_authentication) Required scopes:
+- OAuth Required scopes:
   - collections.edit
 
 
-### HTTP request headers
+### HTTP request headers {#createClipbox-headers}
 
 
 - Content-Type: application/json
 - Accept: application/json
 
-### Return type
+### Return type {#createClipbox-return}
 
-[CollectionCreateResponse](CollectionCreateResponse.md)
+[CollectionCreateResponse](CollectionCreateResponse)
 
-### Example response
+### Example response {#createClipbox-response}
 
 {
   "id" : "48433105"
@@ -152,7 +155,7 @@ Name | Type | Description
 
 This endpoint deletes a collection.
 
-### Example
+### Example {#deleteClipbox-example}
 
 ```javascript
 const sstk = require("shutterstock-api");
@@ -171,27 +174,27 @@ videosApi.deleteClipbox(collectionId)
 ```
 
 
-### Parameters
+### Parameters {#deleteClipbox-parameters}
 
 
 Name | Type | Description
 ------------- | ------------- | -------------
  id (required) | String| The ID of the collection to delete 
 
-### Accepted authentication
+### Accepted authentication {#deleteClipbox-auth}
 
 
-- [OAuth](../README.md#OAuth_authentication) Required scopes:
+- OAuth Required scopes:
   - collections.edit
 
 
-### HTTP request headers
+### HTTP request headers {#deleteClipbox-headers}
 
 No request headers required.
 
 
 
-### Return type
+### Return type {#deleteClipbox-return}
 
 No response body.
 
@@ -204,7 +207,7 @@ No response body.
 
 This endpoint removes one or more videos from a collection.
 
-### Example
+### Example {#deleteClipboxItems-example}
 
 ```javascript
 const sstk = require("shutterstock-api");
@@ -230,28 +233,28 @@ videosApi.deleteClipboxItems(collectionId, videosToRemove)
 ```
 
 
-### Parameters
+### Parameters {#deleteClipboxItems-parameters}
 
 
 Name | Type | Description
 ------------- | ------------- | -------------
  id (required) | String| The ID of the Collection from which items will be deleted 
- item_id | [[String]](String.md)| One or more video IDs to remove from the collection 
+ item_id | [[String]](String)| One or more video IDs to remove from the collection 
 
-### Accepted authentication
+### Accepted authentication {#deleteClipboxItems-auth}
 
 
-- [OAuth](../README.md#OAuth_authentication) Required scopes:
+- OAuth Required scopes:
   - collections.edit
 
 
-### HTTP request headers
+### HTTP request headers {#deleteClipboxItems-headers}
 
 No request headers required.
 
 
 
-### Return type
+### Return type {#deleteClipboxItems-return}
 
 No response body.
 
@@ -264,7 +267,7 @@ No response body.
 
 This endpoint redownloads videos that you have already received a license for.
 
-### Example
+### Example {#downloadVideos-example}
 
 ```javascript
 const sstk = require("shutterstock-api");
@@ -288,32 +291,32 @@ videosApi.downloadVideos(licenseId, body)
 ```
 
 
-### Parameters
+### Parameters {#downloadVideos-parameters}
 
 
 Name | Type | Description
 ------------- | ------------- | -------------
  id (required) | String| The license ID of the item to (re)download 
- body (required) | [RedownloadVideo](RedownloadVideo.md)| Information about the videos to redownload 
+ body (required) | [RedownloadVideo](RedownloadVideo)| Information about the videos to redownload 
 
-### Accepted authentication
+### Accepted authentication {#downloadVideos-auth}
 
 
-- [OAuth](../README.md#OAuth_authentication) Required scopes:
+- OAuth Required scopes:
   - licenses.view
 
 
-### HTTP request headers
+### HTTP request headers {#downloadVideos-headers}
 
 
 - Content-Type: application/json
 - Accept: application/json
 
-### Return type
+### Return type {#downloadVideos-return}
 
-[Url](Url.md)
+[Url](Url)
 
-### Example response
+### Example response {#downloadVideos-response}
 
 {
   "url" : "url"
@@ -327,7 +330,7 @@ Name | Type | Description
 
 This endpoint gets more detailed information about a collection, including the timestamp for its creation and the number of videos in it. To get the videos in collections, use GET /videos/collections/{id}/items.
 
-### Example
+### Example {#getClipbox-example}
 
 ```javascript
 const sstk = require('shutterstock-api');
@@ -350,31 +353,31 @@ api.getClipbox(id)
 
 ```
 
-### Parameters
+### Parameters {#getClipbox-parameters}
 
 
 Name | Type | Description
 ------------- | ------------- | -------------
  id (required) | String| The ID of the collection to return 
 
-### Accepted authentication
+### Accepted authentication {#getClipbox-auth}
 
 
-- [OAuth](../README.md#OAuth_authentication) Required scopes:
+- OAuth Required scopes:
   - collections.view
 
 
-### HTTP request headers
+### HTTP request headers {#getClipbox-headers}
 
 
 
 - Accept: application/json
 
-### Return type
+### Return type {#getClipbox-return}
 
-[Collection](Collection.md)
+[Collection](Collection)
 
-### Example response
+### Example response {#getClipbox-response}
 
 {
   "created_time" : "2000-01-23T04:56:07.000+00:00",
@@ -400,7 +403,7 @@ Name | Type | Description
 
 This endpoint lists the IDs of videos in a collection and the date that each was added.
 
-### Example
+### Example {#getClipboxItems-example}
 
 ```javascript
 const sstk = require('shutterstock-api');
@@ -428,7 +431,7 @@ api.getClipboxItems(id, queryParams)
 
 ```
 
-### Parameters
+### Parameters {#getClipboxItems-parameters}
 
 
 Name | Type | Description
@@ -438,24 +441,24 @@ Name | Type | Description
  per_page | Number| Number of results per page, defaults to 100 
  sort | String| Sort order, defaults to oldest <br/><br/>Valid values: "newest", "oldest"
 
-### Accepted authentication
+### Accepted authentication {#getClipboxItems-auth}
 
 
-- [OAuth](../README.md#OAuth_authentication) Required scopes:
+- OAuth Required scopes:
   - collections.view
 
 
-### HTTP request headers
+### HTTP request headers {#getClipboxItems-headers}
 
 
 
 - Accept: application/json
 
-### Return type
+### Return type {#getClipboxItems-return}
 
-[CollectionItemDataList](CollectionItemDataList.md)
+[CollectionItemDataList](CollectionItemDataList)
 
-### Example response
+### Example response {#getClipboxItems-response}
 
 {
   "data" : [ {
@@ -479,7 +482,7 @@ Name | Type | Description
 
 This endpoint lists your collections of videos and their basic attributes.
 
-### Example
+### Example {#getClipboxList-example}
 
 ```javascript
 const sstk = require('shutterstock-api');
@@ -504,7 +507,7 @@ api.getClipboxList(queryParams)
 
 ```
 
-### Parameters
+### Parameters {#getClipboxList-parameters}
 
 
 Name | Type | Description
@@ -512,24 +515,24 @@ Name | Type | Description
  page | Number| Page number, defaults to 1 
  per_page | Number| Number of results per page, defaults to 100 
 
-### Accepted authentication
+### Accepted authentication {#getClipboxList-auth}
 
 
-- [OAuth](../README.md#OAuth_authentication) Required scopes:
+- OAuth Required scopes:
   - collections.view
 
 
-### HTTP request headers
+### HTTP request headers {#getClipboxList-headers}
 
 
 
 - Accept: application/json
 
-### Return type
+### Return type {#getClipboxList-return}
 
-[CollectionDataList](CollectionDataList.md)
+[CollectionDataList](CollectionDataList)
 
-### Example response
+### Example response {#getClipboxList-response}
 
 {
   "data" : [ {
@@ -573,7 +576,7 @@ Name | Type | Description
 
 This endpoint searches for videos that are similar to a video that you specify.
 
-### Example
+### Example {#getSimilarVideos-example}
 
 ```javascript
 const sstk = require('shutterstock-api');
@@ -604,7 +607,7 @@ api.getSimilarVideos(id, queryParams)
 
 ```
 
-### Parameters
+### Parameters {#getSimilarVideos-parameters}
 
 
 Name | Type | Description
@@ -614,22 +617,22 @@ Name | Type | Description
  per_page | Number| Number of results per page, defaults to 20 
  view | String| Amount of detail to render in the response, defaults to minimal <br/><br/>Valid values: "minimal", "full"
 
-### Accepted authentication
+### Accepted authentication {#getSimilarVideos-auth}
 
-- [Basic](../README.md#Basic_authentication)
-- [OAuth](../README.md#OAuth_authentication) (No scope required.)
+- Basic
+- OAuth (No scope required.)
 
-### HTTP request headers
+### HTTP request headers {#getSimilarVideos-headers}
 
 
 
 - Accept: application/json
 
-### Return type
+### Return type {#getSimilarVideos-return}
 
-[VideoSearchResults](VideoSearchResults.md)
+[VideoSearchResults](VideoSearchResults)
 
-### Example response
+### Example response {#getSimilarVideos-response}
 
 {
   "per_page" : 9,
@@ -825,7 +828,7 @@ Name | Type | Description
 
 This endpoint shows information about a video, including URLs to previews and the sizes that it is available in.
 
-### Example
+### Example {#getVideo-example}
 
 ```javascript
 const sstk = require('shutterstock-api');
@@ -854,7 +857,7 @@ api.getVideo(id, queryParams)
 
 ```
 
-### Parameters
+### Parameters {#getVideo-parameters}
 
 
 Name | Type | Description
@@ -862,22 +865,22 @@ Name | Type | Description
  id (required) | String| Video ID 
  view | String| Amount of detail to render in the response, defaults to full <br/><br/>Valid values: "minimal", "full"
 
-### Accepted authentication
+### Accepted authentication {#getVideo-auth}
 
-- [Basic](../README.md#Basic_authentication)
-- [OAuth](../README.md#OAuth_authentication) (No scope required.)
+- Basic
+- OAuth (No scope required.)
 
-### HTTP request headers
+### HTTP request headers {#getVideo-headers}
 
 
 
 - Accept: application/json
 
-### Return type
+### Return type {#getVideo-return}
 
-[Video](Video.md)
+[Video](Video)
 
-### Example response
+### Example response {#getVideo-response}
 
 {
   "has_property_release" : true,
@@ -978,7 +981,7 @@ Name | Type | Description
 
 This endpoint lists the categories (Shutterstock-assigned genres) that videos can belong to.
 
-### Example
+### Example {#getVideoCategories-example}
 
 ```javascript
 const sstk = require('shutterstock-api');
@@ -1000,26 +1003,26 @@ api.getVideoCategories()
 
 ```
 
-### Parameters
+### Parameters {#getVideoCategories-parameters}
 
 This endpoint does not accept any parameters.
 
-### Accepted authentication
+### Accepted authentication {#getVideoCategories-auth}
 
-- [Basic](../README.md#Basic_authentication)
-- [OAuth](../README.md#OAuth_authentication) (No scope required.)
+- Basic
+- OAuth (No scope required.)
 
-### HTTP request headers
+### HTTP request headers {#getVideoCategories-headers}
 
 
 
 - Accept: application/json
 
-### Return type
+### Return type {#getVideoCategories-return}
 
-[CategoryDataList](CategoryDataList.md)
+[CategoryDataList](CategoryDataList)
 
-### Example response
+### Example response {#getVideoCategories-response}
 
 {
   "per_page" : 6,
@@ -1056,7 +1059,7 @@ This endpoint does not accept any parameters.
 
 This endpoint lists existing licenses. You can filter the results according to the type of license or the video ID.
 
-### Example
+### Example {#getVideoLicenseList-example}
 
 ```javascript
 const sstk = require('shutterstock-api');
@@ -1084,7 +1087,7 @@ api.getVideoLicenseList(queryParams)
 
 ```
 
-### Parameters
+### Parameters {#getVideoLicenseList-parameters}
 
 
 Name | Type | Description
@@ -1095,24 +1098,24 @@ Name | Type | Description
  per_page | Number| Number of results per page, defaults to 20 
  sort | String| Sort by oldest or newest videos first, defaults to newest <br/><br/>Valid values: "newest", "oldest"
 
-### Accepted authentication
+### Accepted authentication {#getVideoLicenseList-auth}
 
 
-- [OAuth](../README.md#OAuth_authentication) Required scopes:
+- OAuth Required scopes:
   - licenses.view
 
 
-### HTTP request headers
+### HTTP request headers {#getVideoLicenseList-headers}
 
 
 
 - Accept: application/json
 
-### Return type
+### Return type {#getVideoLicenseList-return}
 
-[DownloadHistoryDataList](DownloadHistoryDataList.md)
+[DownloadHistoryDataList](DownloadHistoryDataList)
 
-### Example response
+### Example response {#getVideoLicenseList-response}
 
 {
   "per_page" : 6,
@@ -1205,7 +1208,7 @@ Name | Type | Description
 
 This endpoint lists information about one or more videos, including the aspect ratio and URLs to previews.
 
-### Example
+### Example {#getVideoList-example}
 
 ```javascript
 const sstk = require('shutterstock-api');
@@ -1234,30 +1237,30 @@ api.getVideoList(id, queryParams)
 
 ```
 
-### Parameters
+### Parameters {#getVideoList-parameters}
 
 
 Name | Type | Description
 ------------- | ------------- | -------------
- id (required) | [[String]](String.md)| One or more video IDs 
+ id (required) | [[String]](String)| One or more video IDs 
  view | String| Amount of detail to render in the response, defaults to minimal <br/><br/>Valid values: "minimal", "full"
 
-### Accepted authentication
+### Accepted authentication {#getVideoList-auth}
 
-- [Basic](../README.md#Basic_authentication)
-- [OAuth](../README.md#OAuth_authentication) (No scope required.)
+- Basic
+- OAuth (No scope required.)
 
-### HTTP request headers
+### HTTP request headers {#getVideoList-headers}
 
 
 
 - Accept: application/json
 
-### Return type
+### Return type {#getVideoList-return}
 
-[VideoDataList](VideoDataList.md)
+[VideoDataList](VideoDataList)
 
-### Example response
+### Example response {#getVideoList-response}
 
 {
   "per_page" : 6,
@@ -1466,7 +1469,7 @@ Name | Type | Description
 
 This endpoint gets licenses for one or more videos. You must specify the video IDs in the body parameter and the size and subscription ID either in the query parameter or with each video ID in the body parameter. Values in the body parameter override values in the query parameters.
 
-### Example
+### Example {#licenseVideos-example}
 
 ```javascript
 const sstk = require("shutterstock-api");
@@ -1502,36 +1505,36 @@ videosApi.searchVideos(body, queryParams)
 ```
 
 
-### Parameters
+### Parameters {#licenseVideos-parameters}
 
 
 Name | Type | Description
 ------------- | ------------- | -------------
- body (required) | [LicenseVideoRequest](LicenseVideoRequest.md)| List of videos to request licenses for and information about each license transaction; these values override the defaults in the query parameters 
+ body (required) | [LicenseVideoRequest](LicenseVideoRequest)| List of videos to request licenses for and information about each license transaction; these values override the defaults in the query parameters 
  subscription_id | String| The subscription ID to use for licensing 
  size | String| The size of the video to license, defaults to web <br/><br/>Valid values: "web", "sd", "hd", "4k"
  search_id | String| The Search ID that led to this licensing event 
 
-### Accepted authentication
+### Accepted authentication {#licenseVideos-auth}
 
 
-- [OAuth](../README.md#OAuth_authentication) Required scopes:
+- OAuth Required scopes:
   - licenses.create
 Required scopes:
   - purchases.view
 
 
-### HTTP request headers
+### HTTP request headers {#licenseVideos-headers}
 
 
 - Content-Type: application/json
 - Accept: application/json
 
-### Return type
+### Return type {#licenseVideos-return}
 
-[LicenseVideoResultDataList](LicenseVideoResultDataList.md)
+[LicenseVideoResultDataList](LicenseVideoResultDataList)
 
-### Example response
+### Example response {#licenseVideos-response}
 
 {
   "per_page" : 1,
@@ -1584,7 +1587,7 @@ Required scopes:
 
 This endpoint sets a new name for a collection.
 
-### Example
+### Example {#renameClipbox-example}
 
 ```javascript
 const sstk = require("shutterstock-api");
@@ -1607,28 +1610,28 @@ videosApi.renameClipbox(collectionId, body)
 ```
 
 
-### Parameters
+### Parameters {#renameClipbox-parameters}
 
 
 Name | Type | Description
 ------------- | ------------- | -------------
  id (required) | String| The ID of the collection to rename 
- body (required) | [CollectionUpdateRequest](CollectionUpdateRequest.md)| The new name for the collection 
+ body (required) | [CollectionUpdateRequest](CollectionUpdateRequest)| The new name for the collection 
 
-### Accepted authentication
+### Accepted authentication {#renameClipbox-auth}
 
 
-- [OAuth](../README.md#OAuth_authentication) Required scopes:
+- OAuth Required scopes:
   - collections.edit
 
 
-### HTTP request headers
+### HTTP request headers {#renameClipbox-headers}
 
 
 - Content-Type: application/json
 
 
-### Return type
+### Return type {#renameClipbox-return}
 
 No response body.
 
@@ -1639,9 +1642,9 @@ No response body.
 
 **Search for videos**
 
-This endpoint searches for videos. If you specify more than one search parameter, the API uses an AND condition. Array parameters can be specified multiple times; in this case, the API uses an AND or an OR condition with those values, depending on the parameter. You can also filter search terms out in the &#x60;query&#x60; parameter by prefixing the term with NOT.
+This endpoint searches for videos. If you specify more than one search parameter, the API uses an AND condition. Array parameters can be specified multiple times; in this case, the API uses an AND or an OR condition with those values, depending on the parameter. You can also filter search terms out in the `query` parameter by prefixing the term with NOT.
 
-### Example
+### Example {#searchVideos-example}
 
 ```javascript
 const sstk = require("shutterstock-api");
@@ -1667,7 +1670,7 @@ videosApi.searchVideos(queryParams)
 ```
 
 
-### Parameters
+### Parameters {#searchVideos-parameters}
 
 
 Name | Type | Description
@@ -1677,7 +1680,7 @@ Name | Type | Description
  added_date_end | Date| Show videos added before the specified date, in the format YYYY-MM-DD 
  aspect_ratio | String| Show videos with the specified aspect ratio <br/><br/>Valid values: "4_3", "16_9", "nonstandard"
  category | String| Show videos with the specified Shutterstock-defined category; specify a category name or ID 
- contributor | [[String]](String.md)| Show videos with the specified artist names or IDs 
+ contributor | [[String]](String)| Show videos with the specified artist names or IDs 
  duration | Number| (Deprecated; use duration_from and duration_to instead) Show videos with the specified duration (seconds) 
  duration_from | Number| Show videos with the specified duration or longer (seconds) 
  duration_to | Number| Show videos with the specified duration or shorter (seconds) 
@@ -1685,8 +1688,8 @@ Name | Type | Description
  fps_from | Number| Show videos with the specified frames per second or more 
  fps_to | Number| Show videos with the specified frames per second or fewer 
  language | String| Set query and result language (uses Accept-Language header if not set) <br/><br/>Valid values: "cs", "da", "de", "en", "es", "fi", "fr", "hu", "it", "ja", "ko", "nb", "nl", "pl", "pt", "ru", "sv", "th", "tr", "zh"
- license | [[String]](String.md)| Show only videos with the specified license or licenses <br/><br/>Valid values: "commercial", "editorial"
- model | [[String]](String.md)| Show videos with each of the specified models 
+ license | [[String]](String)| Show only videos with the specified license or licenses <br/><br/>Valid values: "commercial", "editorial"
+ model | [[String]](String)| Show videos with each of the specified models 
  page | Number| Page number, defaults to 1 
  per_page | Number| Number of results per page, defaults to 20 
  people_age | String| Show videos that feature people of the specified age range <br/><br/>Valid values: "infants", "children", "teenagers", "20s", "30s", "40s", "50s", "60s", "older"
@@ -1700,22 +1703,22 @@ Name | Type | Description
  sort | String| Sort by one of these categories, defaults to popular <br/><br/>Valid values: "newest", "popular", "relevance", "random"
  view | String| Amount of detail to render in the response, defaults to minimal <br/><br/>Valid values: "minimal", "full"
 
-### Accepted authentication
+### Accepted authentication {#searchVideos-auth}
 
-- [Basic](../README.md#Basic_authentication)
-- [OAuth](../README.md#OAuth_authentication) (No scope required.)
+- Basic
+- OAuth (No scope required.)
 
-### HTTP request headers
+### HTTP request headers {#searchVideos-headers}
 
 
 
 - Accept: application/json
 
-### Return type
+### Return type {#searchVideos-return}
 
-[VideoSearchResults](VideoSearchResults.md)
+[VideoSearchResults](VideoSearchResults)
 
-### Example response
+### Example response {#searchVideos-response}
 
 {
   "per_page" : 9,

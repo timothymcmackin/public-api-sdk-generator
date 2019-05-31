@@ -1,6 +1,13 @@
-# shutterstock-api.ContributorProfile
+---
+title: shutterstock-api.ContributorProfile
+permalink: docs/ContributorProfile
+toc: false
+---
+
+
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **about** | **String** | Short description of the contributors&#39; library | [optional] 
@@ -10,7 +17,7 @@ Name | Type | Description | Notes
 **id** | **String** | Contributor ID | 
 **location** | **String** | Country code representing the contributors&#39; locale | [optional] 
 **portfolio_url** | **String** | Web URL for the contributors&#39; profile | [optional] 
-**social_media** | [**ContributorProfileSocialMedia**](ContributorProfileSocialMedia.md) |  | [optional] 
+**social_media** | [**ContributorProfileSocialMedia**](ContributorProfileSocialMedia) |  | [optional] 
 **styles** | **[String]** | List of styles that the contributor specializes in (lifestyle, mixed media, etc) | [optional] 
 **subjects** | **[String]** | Generic list of subjects for contributors&#39; work (food_and_drink, holiday, people, etc) | [optional] 
 **website** | **String** | Personal website for the contributor | [optional] 

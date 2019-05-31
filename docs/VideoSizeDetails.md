@@ -1,6 +1,13 @@
-# shutterstock-api.VideoSizeDetails
+---
+title: shutterstock-api.VideoSizeDetails
+permalink: docs/VideoSizeDetails
+toc: false
+---
+
+
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **display_name** | **String** | Display name of this video size | [optional] 

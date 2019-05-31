@@ -1,11 +1,14 @@
-# shutterstock-api.TestApi
+---
+title: shutterstock-api.TestApi
+permalink: docs/TestApi
+---
 
 All URIs are relative to `https://api.shutterstock.com`.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[`echo`](TestApi.md#echo) | `GET /v2/test` | Echo text
-[`validate`](TestApi.md#validate) | `GET /v2/test/validate` | Validate input
+[`echo`](#echo) | `GET /v2/test` | Echo text
+[`validate`](#validate) | `GET /v2/test/validate` | Validate input
 
 
 <a name="echo"></a>
@@ -14,7 +17,7 @@ Method | HTTP request | Description
 
 **Echo text**
 
-### Example
+### Example {#echo-example}
 
 ```javascript
 const sstk = require('shutterstock-api');
@@ -35,28 +38,28 @@ api.echo(queryParams)
 
 ```
 
-### Parameters
+### Parameters {#echo-parameters}
 
 
 Name | Type | Description
 ------------- | ------------- | -------------
  text | String| Text to echo, defaults to ok 
 
-### Accepted authentication
+### Accepted authentication {#echo-auth}
 
 No authentication required.
 
-### HTTP request headers
+### HTTP request headers {#echo-headers}
 
 
 
 - Accept: application/json
 
-### Return type
+### Return type {#echo-return}
 
-[TestEcho](TestEcho.md)
+[TestEcho](TestEcho)
 
-### Example response
+### Example response {#echo-response}
 
 {
   "text" : "text"
@@ -68,7 +71,7 @@ No authentication required.
 
 **Validate input**
 
-### Example
+### Example {#validate-example}
 
 ```javascript
 const sstk = require('shutterstock-api');
@@ -92,30 +95,30 @@ api.validate(id, queryParams)
 
 ```
 
-### Parameters
+### Parameters {#validate-parameters}
 
 
 Name | Type | Description
 ------------- | ------------- | -------------
  id (required) | Number| Integer ID 
- tag | [[String]](String.md)| List of tags 
+ tag | [[String]](String)| List of tags 
  user_agent | String| User agent 
 
-### Accepted authentication
+### Accepted authentication {#validate-auth}
 
 No authentication required.
 
-### HTTP request headers
+### HTTP request headers {#validate-headers}
 
 
 
 - Accept: application/json
 
-### Return type
+### Return type {#validate-return}
 
-[TestValidate](TestValidate.md)
+[TestValidate](TestValidate)
 
-### Example response
+### Example response {#validate-response}
 
 {
   "query" : {

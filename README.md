@@ -1,4 +1,7 @@
-# Official JavaScript SDK client for the Shutterstock API
+---
+title: Official JavaScript SDK client for the Shutterstock API
+permalink: index
+---
 
 The Shutterstock public API provides access to Shutterstock's library of media, as well as information about customers' accounts and the contributors that provide the media.
 This SDK provides classes for JavaScript and Node.js that you can use to access the API from your applications.
@@ -10,11 +13,12 @@ This is the official SDK provided by Shutterstock for its API.
 
 ## References
 
-- For more information about the Shutterstock public API, see https://developers.shutterstock.com/documentation.
+- For more information about the Shutterstock public API, see [https://developers.shutterstock.com/documentation](https://developers.shutterstock.com/documentation).
 - For reference information about the endpoints that this SDK calls, see the [API reference](http://api-reference.shutterstock.com).
-- To provide feedback or bug reports about the API and this SDK, see https://api-feedback.shutterstock.com.
+- To provide feedback or bug reports about the API and this SDK, see [https://api-feedback.shutterstock.com](https://api-feedback.shutterstock.com).
 - For the status of the API, see [API status](https://status.developers.shutterstock.com/).
-- For the source code, see https://github.com/shutterstock/public-api-javascript-sdk.
+- For the source code, see [https://github.com/shutterstock/public-api-javascript-sdk](https://github.com/shutterstock/public-api-javascript-sdk).
+- The Jekyll template for the web version of this documentation is provided by Tom Johnson of [https://idratherbewriting.com](https://idratherbewriting.com).
 
 ## Contributing
 

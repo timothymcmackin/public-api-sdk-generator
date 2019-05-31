@@ -1,9 +1,16 @@
-# shutterstock-api.ImageSearchResults
+---
+title: shutterstock-api.ImageSearchResults
+permalink: docs/ImageSearchResults
+toc: false
+---
+
+
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | [**[Image]**](Image.md) | List of images | 
+**data** | [**[Image]**](Image) | List of images | 
 **message** | **String** | Server-generated message, if any | [optional] 
 **page** | **Number** | Current page that is returned | [optional] 
 **per_page** | **Number** | Number of results per page | [optional] 

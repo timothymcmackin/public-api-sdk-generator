@@ -1,15 +1,18 @@
-# shutterstock-api.EditorialApi
+---
+title: shutterstock-api.EditorialApi
+permalink: docs/EditorialApi
+---
 
 All URIs are relative to `https://api.shutterstock.com`.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[`getEditorialImage`](EditorialApi.md#getEditorialImage) | `GET /v2/editorial/{id}` | Get editorial content details
-[`getEditorialLivefeed`](EditorialApi.md#getEditorialLivefeed) | `GET /v2/editorial/livefeeds/{id}` | Get editorial livefeed
-[`getEditorialLivefeedItems`](EditorialApi.md#getEditorialLivefeedItems) | `GET /v2/editorial/livefeeds/{id}/items` | Get editorial livefeed items
-[`getEditorialLivefeedList`](EditorialApi.md#getEditorialLivefeedList) | `GET /v2/editorial/livefeeds` | Get editorial livefeed list
-[`licenseEditorialImage`](EditorialApi.md#licenseEditorialImage) | `POST /v2/editorial/licenses` | License editorial content
-[`searchEditorial`](EditorialApi.md#searchEditorial) | `GET /v2/editorial/search` | Search editorial content
+[`getEditorialImage`](#getEditorialImage) | `GET /v2/editorial/{id}` | Get editorial content details
+[`getEditorialLivefeed`](#getEditorialLivefeed) | `GET /v2/editorial/livefeeds/{id}` | Get editorial livefeed
+[`getEditorialLivefeedItems`](#getEditorialLivefeedItems) | `GET /v2/editorial/livefeeds/{id}/items` | Get editorial livefeed items
+[`getEditorialLivefeedList`](#getEditorialLivefeedList) | `GET /v2/editorial/livefeeds` | Get editorial livefeed list
+[`licenseEditorialImage`](#licenseEditorialImage) | `POST /v2/editorial/licenses` | License editorial content
+[`searchEditorial`](#searchEditorial) | `GET /v2/editorial/search` | Search editorial content
 
 
 <a name="getEditorialImage"></a>
@@ -20,7 +23,7 @@ Method | HTTP request | Description
 
 This endpoint shows information about an editorial image, including a URL to a preview image and the sizes that it is available in.
 
-### Example
+### Example {#getEditorialImage-example}
 
 ```javascript
 const sstk = require('shutterstock-api');
@@ -48,7 +51,7 @@ api.getEditorialImage(id, country)
 
 ```
 
-### Parameters
+### Parameters {#getEditorialImage-parameters}
 
 
 Name | Type | Description
@@ -56,22 +59,22 @@ Name | Type | Description
  id (required) | String| Editorial ID 
  country (required) | String| Returns only if the content is available for distribution in a certain country; specify with 3-letter country code 
 
-### Accepted authentication
+### Accepted authentication {#getEditorialImage-auth}
 
-- [Basic](../README.md#Basic_authentication)
-- [OAuth](../README.md#OAuth_authentication) (No scope required.)
+- Basic
+- OAuth (No scope required.)
 
-### HTTP request headers
+### HTTP request headers {#getEditorialImage-headers}
 
 
 
 - Accept: application/json
 
-### Return type
+### Return type {#getEditorialImage-return}
 
-[EditorialContent](EditorialContent.md)
+[EditorialContent](EditorialContent)
 
-### Example response
+### Example response {#getEditorialImage-response}
 
 {
   "assets" : {
@@ -144,7 +147,7 @@ Name | Type | Description
 
 **Get editorial livefeed**
 
-### Example
+### Example {#getEditorialLivefeed-example}
 
 ```javascript
 const sstk = require('shutterstock-api');
@@ -172,7 +175,7 @@ api.getEditorialLivefeed(id, country)
 
 ```
 
-### Parameters
+### Parameters {#getEditorialLivefeed-parameters}
 
 
 Name | Type | Description
@@ -180,22 +183,22 @@ Name | Type | Description
  id (required) | String| Editorial livefeed ID; must be an URI encoded string 
  country (required) | String| Returns only if the livefeed is available for distribution in a certain country; specify with 3-letter country code 
 
-### Accepted authentication
+### Accepted authentication {#getEditorialLivefeed-auth}
 
-- [Basic](../README.md#Basic_authentication)
-- [OAuth](../README.md#OAuth_authentication) (No scope required.)
+- Basic
+- OAuth (No scope required.)
 
-### HTTP request headers
+### HTTP request headers {#getEditorialLivefeed-headers}
 
 
 
 - Accept: application/json
 
-### Return type
+### Return type {#getEditorialLivefeed-return}
 
-[EditorialLivefeed](EditorialLivefeed.md)
+[EditorialLivefeed](EditorialLivefeed)
 
-### Example response
+### Example response {#getEditorialLivefeed-response}
 
 {
   "created_time" : "2000-01-23T04:56:07.000+00:00",
@@ -216,7 +219,7 @@ Name | Type | Description
 
 **Get editorial livefeed items**
 
-### Example
+### Example {#getEditorialLivefeedItems-example}
 
 ```javascript
 const sstk = require('shutterstock-api');
@@ -244,7 +247,7 @@ api.getEditorialLivefeedItems(id, country)
 
 ```
 
-### Parameters
+### Parameters {#getEditorialLivefeedItems-parameters}
 
 
 Name | Type | Description
@@ -252,22 +255,22 @@ Name | Type | Description
  id (required) | String| Editorial livefeed ID; must be an URI encoded string 
  country (required) | String| Returns only if the livefeed items are available for distribution in a certain country; specify with 3-letter country code 
 
-### Accepted authentication
+### Accepted authentication {#getEditorialLivefeedItems-auth}
 
-- [Basic](../README.md#Basic_authentication)
-- [OAuth](../README.md#OAuth_authentication) (No scope required.)
+- Basic
+- OAuth (No scope required.)
 
-### HTTP request headers
+### HTTP request headers {#getEditorialLivefeedItems-headers}
 
 
 
 - Accept: application/json
 
-### Return type
+### Return type {#getEditorialLivefeedItems-return}
 
-[EditorialContentDataList](EditorialContentDataList.md)
+[EditorialContentDataList](EditorialContentDataList)
 
-### Example response
+### Example response {#getEditorialLivefeedItems-response}
 
 {
   "per_page" : 6,
@@ -422,7 +425,7 @@ Name | Type | Description
 
 **Get editorial livefeed list**
 
-### Example
+### Example {#getEditorialLivefeedList-example}
 
 ```javascript
 const sstk = require('shutterstock-api');
@@ -452,7 +455,7 @@ api.getEditorialLivefeedList(country, queryParams)
 
 ```
 
-### Parameters
+### Parameters {#getEditorialLivefeedList-parameters}
 
 
 Name | Type | Description
@@ -461,22 +464,22 @@ Name | Type | Description
  page | Number| Page number, defaults to 1 
  per_page | Number| Number of results per page, defaults to 20, defaults to 20 
 
-### Accepted authentication
+### Accepted authentication {#getEditorialLivefeedList-auth}
 
-- [Basic](../README.md#Basic_authentication)
-- [OAuth](../README.md#OAuth_authentication) (No scope required.)
+- Basic
+- OAuth (No scope required.)
 
-### HTTP request headers
+### HTTP request headers {#getEditorialLivefeedList-headers}
 
 
 
 - Accept: application/json
 
-### Return type
+### Return type {#getEditorialLivefeedList-return}
 
-[EditorialLivefeedList](EditorialLivefeedList.md)
+[EditorialLivefeedList](EditorialLivefeedList)
 
-### Example response
+### Example response {#getEditorialLivefeedList-response}
 
 {
   "per_page" : 5,
@@ -516,7 +519,7 @@ Name | Type | Description
 
 This endpoint gets licenses for one or more editorial images. You must specify the country and one or more editorial images to license.
 
-### Example
+### Example {#licenseEditorialImage-example}
 
 ```javascript
 const sstk = require("shutterstock-api");
@@ -546,31 +549,31 @@ editorialApi.licenseEditorialImage(body)
 ```
 
 
-### Parameters
+### Parameters {#licenseEditorialImage-parameters}
 
 
 Name | Type | Description
 ------------- | ------------- | -------------
- body (required) | [LicenseEditorialContentRequest](LicenseEditorialContentRequest.md)| License editorial content 
+ body (required) | [LicenseEditorialContentRequest](LicenseEditorialContentRequest)| License editorial content 
 
-### Accepted authentication
+### Accepted authentication {#licenseEditorialImage-auth}
 
 
-- [OAuth](../README.md#OAuth_authentication) Required scopes:
+- OAuth Required scopes:
   - licenses.create
 
 
-### HTTP request headers
+### HTTP request headers {#licenseEditorialImage-headers}
 
 
 - Content-Type: application/json
 - Accept: application/json
 
-### Return type
+### Return type {#licenseEditorialImage-return}
 
-[LicenseEditorialContentResultDataList](LicenseEditorialContentResultDataList.md)
+[LicenseEditorialContentResultDataList](LicenseEditorialContentResultDataList)
 
-### Example response
+### Example response {#licenseEditorialImage-response}
 
 {
   "per_page" : 1,
@@ -613,9 +616,9 @@ Name | Type | Description
 
 **Search editorial content**
 
-This endpoint searches for editorial images. If you specify more than one search parameter, the API uses an AND condition. Array parameters can be specified multiple times; in this case, the API uses an AND or an OR condition with those values, depending on the parameter. You can also filter search terms out in the &#x60;query&#x60; parameter by prefixing the term with NOT.
+This endpoint searches for editorial images. If you specify more than one search parameter, the API uses an AND condition. Array parameters can be specified multiple times; in this case, the API uses an AND or an OR condition with those values, depending on the parameter. You can also filter search terms out in the `query` parameter by prefixing the term with NOT.
 
-### Example
+### Example {#searchEditorial-example}
 
 ```javascript
 const sstk = require("shutterstock-api");
@@ -644,7 +647,7 @@ editorialApi.searchEditorial(country, queryParams)
 ```
 
 
-### Parameters
+### Parameters {#searchEditorial-parameters}
 
 
 Name | Type | Description
@@ -653,28 +656,28 @@ Name | Type | Description
  query | String| One or more search terms separated by spaces 
  sort | String| Sort by, defaults to relevant <br/><br/>Valid values: "relevant", "newest", "oldest"
  category | String| Show editorial content within a certain editorial category; specify by category name 
- supplier_code | [[String]](String.md)| Show only editorial content from certain suppliers 
+ supplier_code | [[String]](String)| Show only editorial content from certain suppliers 
  date_start | Date| Show only editorial content generated on or after a specific date, in the format of YYYY-MM-DD 
  date_end | Date| Show only editorial content generated on or before a specific date, in the format of YYYY-MM-DD 
  per_page | Number| Number of results per page, defaults to 20, defaults to 20 
  cursor | String| The cursor of the page with which to start fetching results; this cursor is returned from previous requests 
 
-### Accepted authentication
+### Accepted authentication {#searchEditorial-auth}
 
-- [Basic](../README.md#Basic_authentication)
-- [OAuth](../README.md#OAuth_authentication) (No scope required.)
+- Basic
+- OAuth (No scope required.)
 
-### HTTP request headers
+### HTTP request headers {#searchEditorial-headers}
 
 
 
 - Accept: application/json
 
-### Return type
+### Return type {#searchEditorial-return}
 
-[EditorialSearchResults](EditorialSearchResults.md)
+[EditorialSearchResults](EditorialSearchResults)
 
-### Example response
+### Example response {#searchEditorial-response}
 
 {
   "next" : "next",

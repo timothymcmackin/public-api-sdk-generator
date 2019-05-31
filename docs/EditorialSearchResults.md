@@ -1,9 +1,16 @@
-# shutterstock-api.EditorialSearchResults
+---
+title: shutterstock-api.EditorialSearchResults
+permalink: docs/EditorialSearchResults
+toc: false
+---
+
+
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | [**[EditorialContent]**](EditorialContent.md) | Editorial items | 
+**data** | [**[EditorialContent]**](EditorialContent) | Editorial items | 
 **message** | **String** | Optional error message | [optional] 
 **next** | **String** | Cursor value that represents the next page of results | [optional] 
 **page** | **Number** | Current page of the response | [optional] 

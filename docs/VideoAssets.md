@@ -1,18 +1,25 @@
-# shutterstock-api.VideoAssets
+---
+title: shutterstock-api.VideoAssets
+permalink: docs/VideoAssets
+toc: false
+---
+
+
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**_4k** | [**VideoSizeDetails**](VideoSizeDetails.md) |  | [optional] 
-**hd** | [**VideoSizeDetails**](VideoSizeDetails.md) |  | [optional] 
-**preview_jpg** | [**Url**](Url.md) |  | [optional] 
-**preview_mp4** | [**Url**](Url.md) |  | [optional] 
-**preview_webm** | [**Url**](Url.md) |  | [optional] 
-**sd** | [**VideoSizeDetails**](VideoSizeDetails.md) |  | [optional] 
-**thumb_jpg** | [**Url**](Url.md) |  | [optional] 
-**thumb_jpgs** | [**Urls**](Urls.md) |  | [optional] 
-**thumb_mp4** | [**Url**](Url.md) |  | [optional] 
-**thumb_webm** | [**Url**](Url.md) |  | [optional] 
-**web** | [**VideoSizeDetails**](VideoSizeDetails.md) |  | [optional] 
+**_4k** | [**VideoSizeDetails**](VideoSizeDetails) |  | [optional] 
+**hd** | [**VideoSizeDetails**](VideoSizeDetails) |  | [optional] 
+**preview_jpg** | [**Url**](Url) |  | [optional] 
+**preview_mp4** | [**Url**](Url) |  | [optional] 
+**preview_webm** | [**Url**](Url) |  | [optional] 
+**sd** | [**VideoSizeDetails**](VideoSizeDetails) |  | [optional] 
+**thumb_jpg** | [**Url**](Url) |  | [optional] 
+**thumb_jpgs** | [**Urls**](Urls) |  | [optional] 
+**thumb_mp4** | [**Url**](Url) |  | [optional] 
+**thumb_webm** | [**Url**](Url) |  | [optional] 
+**web** | [**VideoSizeDetails**](VideoSizeDetails) |  | [optional] 
 
 
