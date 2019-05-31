@@ -2,3 +2,4 @@ swagger2.json
 dist/
 public-api-javascript-sdk/
 node_modules/
+_site/
