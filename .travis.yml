@@ -32,6 +32,7 @@ script:
   - cp -r ./build/jekyll/* .
   - cp ./dist/README.md .
   - cp -r ./dist/docs .
+  - node ./build/jekyll/scripts/fix-links.js
   - git add .
   - git commit --allow-empty -m "Updating JavaScript SDK documentation site"
   - git push
