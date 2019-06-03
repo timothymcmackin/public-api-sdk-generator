@@ -8,7 +8,7 @@ const _ = require('lodash');
 // to [**createSoundbox**](docs/AudioApi.html#createSoundbox)
 function fixReadmeLinks() {
   const linksInMasterRegex = /\[(.*?)\]\(https:\/\/github\.com\/shutterstock\/public-api-javascript-sdk\/blob\/master\/docs\/(.*?)\.md#(.*?)\)/g;
-  const readmeText = fs.readFileSync(`${__dirname}/../../../dist/README.md`, 'utf8');
+  const readmeText = fs.readFileSync(`${__dirname}/../../../README.md`, 'utf8');
   const readmeByLines = readmeText.split('\n');
   const fixedReadme = _.reduce(readmeByLines, (acc, line) => {
     var match;
@@ -19,7 +19,7 @@ function fixReadmeLinks() {
     }
     return acc + fixedLine + '\n';
   }, '');
-  fs.writeFileSync(`${__dirname}/../../../public-api-javascript-sdk/README.md`, fixedReadme, 'utf8');
+  fs.writeFileSync(`${__dirname}/../../../README.md`, fixedReadme, 'utf8');
 }
 
 fixReadmeLinks();
