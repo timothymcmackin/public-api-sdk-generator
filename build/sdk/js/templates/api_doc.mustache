@@ -18,7 +18,7 @@ Method | HTTP request | Description
 
 {{{notes}}}{{/notes}}
 
-### Example {#{{operationId}}-example}
+### Example
 
 {{#vendorExtensions.x-code-samples}}
 ```javascript
@@ -71,7 +71,7 @@ api.{{{operationId}}}({{#allParams}}{{#required}}{{{paramName}}}{{#vendorExtensi
 {{/usePromises}}
 ```{{/vendorExtensions.x-code-samples}}
 
-### Parameters {#{{operationId}}-parameters}
+### Parameters
 
 {{^allParams}}This endpoint does not accept any parameters.{{/allParams}}{{#allParams}}{{#-last}}
 Name | Type | Description
@@ -79,25 +79,25 @@ Name | Type | Description
 {{#allParams}} {{paramName}} {{#required}}(required) {{/required}}| {{#isPrimitiveType}}{{dataType}}{{/isPrimitiveType}}{{^isPrimitiveType}}{{#isFile}}{{dataType}}{{/isFile}}{{^isFile}}[{{dataType}}]({{baseType}}){{/isFile}}{{/isPrimitiveType}}| {{description}}{{#defaultValue}}, defaults to {{defaultValue}}{{/defaultValue}} {{#allowableValues}}<br/><br/>Valid values: {{#enumVars}}{{{value}}}{{^-last}}, {{/-last}}{{/enumVars}}{{/allowableValues}}
 {{/allParams}}
 
-### Accepted authentication {#{{operationId}}-auth}
+### Accepted authentication
 
 {{^authMethods}}No authentication required.{{/authMethods}}{{#authMethods}}{{#isBasic}}- Basic{{/isBasic}}{{#isOAuth}}
 - OAuth {{^scopes}}(No scope required.){{/scopes}}{{#scopes}}required scopes:
   - {{{scope}}}
 {{/scopes}}{{/isOAuth}}{{/authMethods}}
 
-### HTTP request headers {#{{operationId}}-headers}
+### HTTP request headers
 
 {{^consumes}}{{^produces}}No request headers required.{{/produces}}{{/consumes}}
 {{#consumes}}- Content-Type: {{{mediaType}}}{{#hasMore}}, {{/hasMore}}{{/consumes}}
 {{#produces}}- Accept: {{{mediaType}}}{{#hasMore}}, {{/hasMore}}{{/produces}}
 
-### Return type {#{{operationId}}-return}
+### Return type
 
 {{#returnType}}{{#returnTypeIsPrimitive}}{{returnType}}{{/returnTypeIsPrimitive}}{{^returnTypeIsPrimitive}}[{{returnType}}]({{returnBaseType}}){{/returnTypeIsPrimitive}}{{/returnType}}{{^returnType}}No response body.{{/returnType}}
 
 {{#examples}}
-### Example response {#{{operationId}}-response}
+### Example response
 
 ```
 {{{example}}}
