@@ -54,7 +54,7 @@ async function linkifyUrls(readmeFilePromise) {
 
 async function writeReadmeFile(readmeFilePromise) {
   const readmeText = await Promise.resolve(readmeFilePromise);
-  return writeFile(`${__dirname}/../README_out.md`, readmeText, 'utf8');
+  return writeFile(readmeFilePath, readmeText, 'utf8');
 }
 
 _.mixin({
