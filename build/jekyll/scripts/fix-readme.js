@@ -10,10 +10,10 @@ const writeFile = promisify(fs.writeFile);
 const readmeFilePath = `${__dirname}/../README.md`;
 
 // Correct links in README.md
-// from [**createSoundbox**](https://github.com/shutterstock/public-api-javascript-sdk/blob/master/docs/AudioApi.md#createSoundbox)
+// from [**createSoundbox**](docs/AudioApi.md#createSoundbox)
 // to [**createSoundbox**](docs/AudioApi.html#createSoundbox)
 async function fixReadmeLinks(readmeFilePromise) {
-  const linksInMasterRegex = /\[(.*?)\]\(https:\/\/github\.com\/shutterstock\/public-api-javascript-sdk\/blob\/master\/docs\/(.*?)\.md#(.*?)\)/g;
+  const linksInMasterRegex = /\[(.*?)\]\(docs\/(.*?)\.md#(.*?)\)/g;
   const readmeText = await Promise.resolve(readmeFilePromise);
   const readmeByLines = readmeText.split('\n');
   const fixedReadme = _.map(readmeByLines, (line) => {
