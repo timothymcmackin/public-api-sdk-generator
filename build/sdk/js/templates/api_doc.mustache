@@ -84,7 +84,7 @@ Name | Type | Description
 ### Accepted authentication {#{{operationId}}-auth}
 
 {{^authMethods}}No authentication required.{{/authMethods}}{{#authMethods}}{{#isBasic}}- Basic{{/isBasic}}{{#isOAuth}}
-- OAuth {{^scopes}}(No scope required.){{/scopes}}{{#scopes}}Required scopes:
+- OAuth {{^scopes}}(No scope required.){{/scopes}}{{#scopes}}required scopes:
   - {{{scope}}}
 {{/scopes}}{{/isOAuth}}{{/authMethods}}
 
