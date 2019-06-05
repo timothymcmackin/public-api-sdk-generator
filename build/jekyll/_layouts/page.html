@@ -36,19 +36,6 @@ layout: default
 
    {% include base.html %}
 
-    {% unless site.reviewgen %}
-
-      {% include tags.html %}
-    {% endunless %}
-
   {{content}}
 
-{% include disqus.html %}
-
 </div>
-
-{% comment %}
-{{site.data.alerts.hr_shaded}}
-
-{% include footer.html %}
-{% endcomment %}

@@ -21,55 +21,14 @@
                 }
             });
 
-            /// same thing for service selection dropdown
-
-            $("#myserviceList").navgoco({
-                caretHtml: '',
-                accordion: true,
-                openClass: 'active', // open
-                save: false, // leave false or nav highlighting doesn't work right
-                cookie: {
-                    name: 'navgoco-services',
-                    expires: false,
-                    path: '/'
-                },
-                slide: {
-                    duration: 400,
-                    easing: 'swing'
-                }
-            });
-
-
-            /// same thing for tool selection dropdown
-
-            $("#myToolList").navgoco({
-                caretHtml: '',
-                accordion: true,
-                openClass: 'active', // open
-                save: false, // leave false or nav highlighting doesn't work right
-                cookie: {
-                    name: 'navgoco-tools',
-                    expires: false,
-                    path: '/'
-                },
-                slide: {
-                    duration: 400,
-                    easing: 'swing'
-                }
-            });
-
             $("#collapseAll").click(function(e) {
                 e.preventDefault();
                 $("#myserviceList").navgoco('toggle', false);
-                $("#myToolList").navgoco('toggle', false);
-                $("#mysidebar").navgoco('toggle', false);
             });
 
             $("#expandAll").click(function(e) {
                 e.preventDefault();
                 $("#myserviceList").navgoco('toggle', true);
-                $("#myToolList").navgoco('toggle', true);
-                $("#mysidebar").navgoco('toggle', true);
             });
 
         });
